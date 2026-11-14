@@ -16,6 +16,7 @@ a + b = c
 4 + 5 = 9
 
 
+원본 코드
 
 solution.cpp
 
@@ -30,3 +31,23 @@ int main(void) {
     cout << a + b << endl;
     return 0;
 }
+
+
+풀이 코드
+
+#include <iostream>
+using namespace std;
+
+int main(void) {
+    int a, b;
+    cin >> a >> b;
+    int c = a + b;
+    cout << a << " + " << b << " = " << c << endl;
+    return 0;
+}
+
+해매었던 부분
+
+cin >> a >> b; 를 하고 int c = a + b;를 해줘야 한다
+그냥 cin >> a >> b >> c;를 하면 c에 쓰레기 값이 들어가게 되어 버그가 일어난다
+
